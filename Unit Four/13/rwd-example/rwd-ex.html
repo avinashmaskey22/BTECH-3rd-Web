@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Height Box Model Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">Header Goes Here</div>
+        <div class="content">
+            <div class="sidebar">Topics: HTML, CSS</div>
+            <div class="main-content">Main Content Goes Here</div>
+            <div class="additional-content">Other Contents...</div>
+        </div>
+        <div class="footer">
+            <span id="copyright"></span>
+        </div>
+    </div>
+    <script>
+        // Dynamically set the current year
+        const year = new Date().getFullYear();
+        document.getElementById('copyright').textContent =
+            `Copyright © ${year} www.mysite.com`;
+    </script>
+</body>
+
+</html>
