@@ -12,3 +12,12 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+/* 
+Note: 
+For background-size we have following values:
+ - auto: The background image retains its original size without scaling.
+ - contain: The image scales to fit entirely within the container without cropping, leaving empty space if aspect ratios differ.
+ - cover: The image scales to completely cover the container, cropping parts if aspect ratios differ. 
+
+*/
