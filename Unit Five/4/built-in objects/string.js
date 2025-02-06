@@ -110,6 +110,8 @@ console.log(myArray); */
   -> Template literals provide an easy way to interpolate variables and expressions into strings. The method is called string interpolation.
 
 */
+
+
 //String Interpolation Example
 /* let firstName = "John";
 let lastName = "Doe";

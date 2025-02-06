@@ -8,7 +8,7 @@
 
     JS Output:
     By default, JavaScript will use the browser's time zone and display a date as a full text string:
-    Mon Jul 24 2023 20:21:40 GMT+0545 (Nepal Time)
+    Thu Feb 06 2025 18:51:02 GMT+0545 (Nepal Time)
 
     Creating Date Objects:
         -> Date objects are created with the new Date() constructor.
@@ -60,7 +60,7 @@ document.write(date_milli); */
 // document.write("<br> <br>");
 
 //date in strings
-/* var date_strings = new Date("Feb 9, 2020");
+/* var date_strings = new Date("Feb 6, 2020");
 document.write(date_strings.getDate()); */
 
 //document.write("<br> <br>");
@@ -70,7 +70,7 @@ document.write(date_strings.getDate()); */
 document.write(birthDate); */
 
 //parse method - converts date to milliseconds
-/* var dateParse = Date.parse("01 jan 2020");
+/* var dateParse = Date.parse("01 jan 2020"); //returns Timestamp from a string
 document.write(dateParse); */
 
 /*
@@ -87,10 +87,10 @@ document.write(dateParse); */
 */
 
 /* Example of Get Methods */
-// const date = new Date("2023-07-25 09:05:20");
+// const date = new Date("2025-02-06 07:02:20");
 // document.write(date);
 // document.write(date.getFullYear());
-// document.write(date.getTime());
+// document.write(date.getTime()); //returns timestamp of the Date Object
 
 
 /*
@@ -109,9 +109,25 @@ document.write(dateParse); */
 */
 
 /* Example of Set Methods */
-// const date = new Date();
-// document.write(date.setFullYear(2023));
-// document.write(date.setHours(11));
+/* const date = new Date("2024-02-06"); 
+document.write("Before setting the Date: ", date);
+
+document.write("<br><br>");
+
+date.setDate(15);
+document.write("After setting the Date: ", date); */
+
+
+//Moving Date Forward
+
+/* const today = new Date();
+document.write("Today: ", today);
+
+document.write("<br><br>");
+
+today.setTime(today.getTime() + (7 * 24 * 60 * 60 * 1000)); // Add 7 days
+document.write("One Week Later: ", today); */
+
 
 
 
