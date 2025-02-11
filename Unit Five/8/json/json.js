@@ -12,8 +12,8 @@
 
 //Json Example For storing single data
 let person = {
-    "name": "shanker dev",
-    "address": "putalisadak",
+    "name": "Kathmandu University",
+    "address": "Dhulikhel",
     "contact": 9999999999,
     "isHappy": true,
     "hobbies": ["football", "music"],
@@ -24,13 +24,13 @@ let person = {
 }
 // console.log(person);
 // console.log(person.siblings.first);
-console.log(person.hobbies[1]);
+// console.log(person.hobbies[1]);
 
 //Json Example For storing multiple data (or also called JSON Arrays)
 let persons = [
     {
-        "name": "shanker dev",
-        "address": "putalisadak",
+        "name": "Kathmandu University",
+        "address": "Dhulikhel",
         "contact": 9999999999,
         "isHappy": true,
         "hobbies": ["football", "music"],
