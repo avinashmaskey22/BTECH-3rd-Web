@@ -17,12 +17,11 @@
 
   */
 
-
 /* Try on your own for Changing case and Prettifying Name as it has already been discussed in class */
 
 // Syntax: substr(string, start/offset, length)
 
-// $str = "Floccinaucinihilipilification";
+$str = "Floccinaucinihilipilification";
 
 // $str = "Hello";
 
@@ -38,8 +37,8 @@
 
 // Syntax: str_replace(search/needle, replace, /string/haystack, count)
 
-/* $str = "Thames Campus";
-echo str_replace("Thames", "SDC", $str, $i);
+/* $str = "Kathmandu Campus";
+echo str_replace("Campus", "University", $str, $i);
 echo "<br>";
 echo  "The number of replacement is: $i"; */
 
@@ -49,6 +48,6 @@ $search = array("age", "unnecessary", "necessities");
 $replace = array("era", "necessary", "unnecessities");
 
 $newSentence = str_replace($search, $replace, $sentence, $count);
-echo $newSentence;
+// echo $newSentence;
 echo "<br>";
-echo "The number of replacements is: $count";
+// echo "The number of replacements is: $count";

@@ -5,7 +5,7 @@
         -> Single Quote 
         -> Double quote
         -> Heredoc
-        -> Nowdoc (not in syllabus)
+        -> Nowdoc
 */
 
 /* 
@@ -24,6 +24,8 @@ double quotes. This means that quotes in a heredoc do not need to
 be escaped.
 
 */
+
+//heredoc example
 $num = 1000;
 
 $data = <<<MYFILE
@@ -37,3 +39,18 @@ $data = <<<MYFILE
 MYFILE; 
 
 echo $data;
+
+//nowdoc example
+/* $num = 1000;
+
+$data = <<<'MYFILE'
+        This is $num our second class in <b>PHP</b> 
+        <br>
+        "The double quote is also acceptable in heredoc" 
+        <br>
+        'helloworld'
+        <br>
+        "As discussed in class try to copy and paste b.html table code here inside heredoc and see the result"      
+MYFILE; 
+
+echo $data; */

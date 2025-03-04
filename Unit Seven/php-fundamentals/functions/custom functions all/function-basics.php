@@ -104,16 +104,8 @@ debug($array, true);
 echo "<b>Hello</b>"; */
 
 
+/* Understanding Variable Scope: 
 
+Your Task: Write one example each using function for local, global and static. 
 
-
-
-/* Understanding Variable Scope  */
-function demo()
-{
-    $a = 10;
-    echo $a;
-}
-
-// demo();
-// echo $a;
+*/

@@ -71,7 +71,7 @@ $act = "detail";
 
 /* Q. WAP in PHP to print odd and even number using switch case */
 
-/* $act = "detail";
+$act = "detail";
 
 switch ($act) {
         case "add":
@@ -87,9 +87,9 @@ switch ($act) {
                 break;
 
         default:
-                echo "The operation performed is detail";
-} */
-
+                echo "The operation performed is detail.";
+                break;
+}
 
 /* $num = 10;
 

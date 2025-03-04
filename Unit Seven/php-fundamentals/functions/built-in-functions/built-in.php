@@ -5,7 +5,7 @@ include 'templating-functions/add.php';
 
 /* Encryption method */
 
-$pass = "Avinash" . "kistcollege";
+$pass = "Ram" . "KUSOED";
 $signature = md5($pass);
 // echo $signature;
 

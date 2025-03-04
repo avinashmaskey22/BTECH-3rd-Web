@@ -1,8 +1,8 @@
 <?php
 
 /* In php constants can be defined in two ways:
-    a) define() //Used to define constants outside of a class. 
-    b) const //Used to define constants both inside and outside of a class.
+    a) define() //Used to define constants outside of a class only. It cannot be used inside a class. 
+    b) const //Used to define constants both inside and outside of a class, global scope.
 */
 
 // define(CONSTANT NAME, constant value)
