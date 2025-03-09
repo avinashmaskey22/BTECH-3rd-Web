@@ -73,7 +73,7 @@ $act = "detail";
 
 $act = "detail";
 
-switch ($act) {
+/* switch ($act) {
         case "add":
                 echo "The operation performed is add";
                 break;
@@ -89,7 +89,7 @@ switch ($act) {
         default:
                 echo "The operation performed is detail.";
                 break;
-}
+} */
 
 /* $num = 10;
 

@@ -5,8 +5,8 @@
    This function returns true if the variable exists and is not NULL, 
    otherwise it returns false. */
 
-/* $a = 10;
-if (isset($a)) {
+$a = 10;
+/* if (isset($a)) {
     echo "The variable \$a is set.";
 } else {
     echo "The variable \$a is not set.";

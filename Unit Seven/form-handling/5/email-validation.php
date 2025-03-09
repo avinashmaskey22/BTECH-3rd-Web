@@ -48,7 +48,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </span>
     <span style="color: blue;">
         <?php
-        if ($sucess && empty($error) && empty($emailError)) {
+        if ($sucess && empty($emailError)) {
             echo $sucess;
         }
         ?>

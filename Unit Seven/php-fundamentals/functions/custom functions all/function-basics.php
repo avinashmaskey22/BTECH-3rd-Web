@@ -83,7 +83,6 @@ $z = 30;
 $res = mulNum($x);
 echo $res; */
 
-
 /* function debug($data, $is_exit = false)
 {
     echo "<pre>";

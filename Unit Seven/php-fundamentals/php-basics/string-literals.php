@@ -26,7 +26,7 @@ be escaped.
 */
 
 //heredoc example
-$num = 1000;
+/* $num = 1000;
 
 $data = <<<MYFILE
         This is $num our second class in <b>PHP</b> 
@@ -38,7 +38,7 @@ $data = <<<MYFILE
         "As discussed in class try to copy and paste b.html table code here inside heredoc and see the result"      
 MYFILE; 
 
-echo $data;
+echo $data; */
 
 //nowdoc example
 /* $num = 1000;

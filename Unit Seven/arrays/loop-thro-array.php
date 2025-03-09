@@ -8,9 +8,11 @@ $meals = array(
     'Hot Dog' => 2.3
 );
 
-foreach ($meals as $dish => $value) {
-    // echo "The price of " . $dish . " is: " . "\$$value" . "<br>";
-}
+
+
+/* foreach ($meals as $dish => $value) {
+    echo "The price of " . $dish . " is: " . "\$$value" . "<br>";
+} */
 
 
 /* Example: Modifying an array with foreach() */
@@ -22,13 +24,17 @@ $meals = array(
     'Hot Dog' => 2.3
 );
 
+
 foreach ($meals as $dish => $price) {
+
+    // echo $meals[$dish] . "<br>";
+    // echo $price;
 
     /* $price = $price * 2;
     echo "The price of $dish is: " . $price . "<br>"; */
 
-    /* $meals[$dish] = $meals[$dish] * 2;
-    echo "The price of $dish is: " . $meals[$dish] . "<br>"; */
+    // $meals[$dish] = $meals[$dish] * 2;
+    // echo "The price of $dish is: " . $meals[$dish] . "<br>";
 }
 
 

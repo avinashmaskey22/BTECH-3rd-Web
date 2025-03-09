@@ -3,17 +3,29 @@
 
 /* foreach Loop */
 $person = array(
-    'one' => array(
+    array(
         'name' => 'User One',
         'email' => 'userone@gmail.com',
         'address' => 'Kathmandu',
         'phone' => '9999999999'
     ),
-    'two' => array(
+    array(
         'name' => 'User Two',
         'email' => 'usertwo@gmail.com',
         'address' => 'Lalitpur',
         'phone' => '8888888888'
+    ),
+    array(
+        'name' => 'User Three',
+        'email' => 'userthree@gmail.com',
+        'address' => 'Bhaktapur',
+        'phone' => '7777777777'
+    ),
+    array(
+        'name' => 'User Four',
+        'email' => 'userfour@gmail.com',
+        'address' => 'Biratnagar',
+        'phone' => '5555555555'
     )
 );
 

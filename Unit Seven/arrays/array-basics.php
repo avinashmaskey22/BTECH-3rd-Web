@@ -9,9 +9,9 @@
 
 /* two ways of defining an array */
 $info = [
-    "Shanker Dev Campus",
-    "sdc@shankerdev.edu.np",
-    "Putalisadak",
+    "KU",
+    "ku@ku.edu.np",
+    "Hattiban",
     11111111
 ];
 
