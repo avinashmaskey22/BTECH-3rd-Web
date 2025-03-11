@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     </span>
     <span style="color: blue;">
         <?php
-        if ($sucess) {
+        if ($sucess && empty($error)) {
             echo $sucess;
         }
         ?>

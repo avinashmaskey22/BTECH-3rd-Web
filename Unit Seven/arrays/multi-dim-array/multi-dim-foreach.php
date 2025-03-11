@@ -33,6 +33,7 @@ $person = array(
 print_r($person);
 echo "</pre>"; */
 
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,18 +55,16 @@ echo "</pre>"; */
         </tr>
         <?php
         $i = 1;
-        foreach ($person as $key => $user) {
+        foreach ($person as $key => $value) {
         ?>
-        <tr>
-            <td><?php echo $i++ . "."; ?></td>
-            <td><?php echo $user['name']; ?></td>
-            <td><?php echo $user['email']; ?></td>
-            <td><?php echo $user['address']; ?></td>
-            <td><?php echo $user['phone']; ?></td>
-        </tr>
-        <?php
-        }
-        ?>
+            <tr>
+                <td><?php echo $i++ . "."; ?></td>
+                <td><?php echo $value['name']; ?></td>
+                <td><?php echo $value['email']; ?></td>
+                <td><?php echo $value['address']; ?></td>
+                <td><?php echo $value['phone']; ?></td>
+            </tr>
+        <?php } ?>
     </table>
 </body>
 

@@ -1,14 +1,14 @@
 <?php
 
-// $str = "<b>KUSOED</b>";
+$str = "<b>KUSOED</b>";
 
-// $str1 = "© 2025 & <b>KUSOED</b>";
+$str1 = "© 2025 & <b>KUSOED</b>";
 
-// echo strip_tags($str) . "<br>";
+echo strip_tags($str) . "<br>";
 
-// echo htmlentities($str1) . "<br>";
+echo htmlentities($str1) . "<br>";
 
-// echo htmlspecialchars($str1) . "<br>";
+echo htmlspecialchars($str1) . "<br>";
 
 // strip_tags() removes all HTML tags but keeps the content inside them.
 

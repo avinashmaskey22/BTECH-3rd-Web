@@ -13,23 +13,17 @@ Q. What is the purpose of file handling in PHP?
    and other metadata. 
    
 -> Are file system really faster than database (or MySQL)?
-   -  It depends how big the file(s) are, how selective the query is, 
-      and whether the keys used in the update or select are indexed.
-   
-   -  If the database has to do a full-table scan, it’s likely to be 
-      slower than a file. That’s something database schemas are 
-      usually designed to avoid. It it’s a gigabyte database, and 
-      the update is one row of a primary key or indexed field, the 
-      database is likely to do a handful of small i/o operations, 
-      while the file operation will have to read the whole thing.
+   - If a database has to scan the entire table, it may be slower than reading a file. 
+     However, databases are usually designed to avoid such full-table scans. 
+     If the database is large (e.g., a gigabyte) but only one row needs updating using 
+     a primary key or indexed field, the database will quickly perform a few small 
+     read/write operations, whereas a file system would need to read the entire file.
 
-   -  For an update, a text file probably has to be completely 
-      re-written as well. This doesn’t work if there is more than
-      one program doing updates at a time. So, for smallish, 
-      single-user things, a flat text file (like CSV format) 
-      can be faster and simpler. As soon as things grow, and 
-      there is multi-user access, you get driven into various 
-      flavors of database technology.
+   - Updating a text file often means rewriting the whole file, which can be inefficient,
+     especially when multiple programs need to update it at the same time. 
+     For small, single-user applications, a simple file (like a CSV) may be faster 
+     and easier to use. But as the system grows and multiple users need access, 
+     a database becomes a better choice.
    
    -  Source: David Brower (Architect in Oracle)
 
@@ -70,7 +64,7 @@ d. fread():
    -> $handle is type resource or file pointer
    -> $length is type int 
 
-e. fputcsv():
+e. fputcsv(): (Not In Syllabus)
 -> Format line as csv and write to file pointer.
    
    Syntax - fputcsv($handle, $fields, $delimeter); // returns type 
@@ -82,7 +76,7 @@ e. fputcsv():
    -> $delimeter is type string (one character or separator)
    -> $delimeter is optional
 
-f. fgetcsv():
+f. fgetcsv():(Not In Syllabus)
 -> Gets line from file pointer and parse for csv fields.
    
    Syntax - fgetcsv($handle, $length, $delimeter); // returns type
@@ -128,7 +122,7 @@ j. feof():
    -> $handle is type resource
 
 k. fgets():
--> Gets line from file pointer.
+-> Gets line from file pointer. Used to read a single line from an open file.
    
    Syntax - fgets($handle, $length); // returns type string
                                                 
