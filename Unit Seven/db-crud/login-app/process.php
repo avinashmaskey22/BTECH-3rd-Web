@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect('localhost', 'root', '', 'demo', 3306);
+$conn = mysqli_connect('localhost', 'root', '', 'demo', 3307);
 
 if (
     isset($_POST, $_POST['uName'], $_POST['uPass'])

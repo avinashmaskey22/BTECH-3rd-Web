@@ -7,7 +7,7 @@
 */
 
 //db connection
-$conn = mysqli_connect("localhost", "root", "", "sdc_b", 3306);
+$conn = mysqli_connect("localhost", "root", "", "prac", 3307);
 
 //inserting single row at a time
 $sql = "INSERT INTO students 

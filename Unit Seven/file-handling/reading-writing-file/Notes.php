@@ -33,7 +33,7 @@ Important functions for file handling in PHP:
 a. fopen():
 -> Opens a file or URL.
    
-   Syntax - fopen($filename, $mode); // returns type resource
+   Syntax - $fp = fopen($filename, $mode); // returns type resource
    
    Note: 
    -> $filename and $mode are type string

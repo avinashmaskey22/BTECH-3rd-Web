@@ -1,7 +1,7 @@
 <?php
 
 //database connection
-$conn = mysqli_connect("localhost", "root", "", "sdc_b", 3306); //this function returns an mysqli Object
+$conn = mysqli_connect("localhost", "root", "", "prac", 3307); //this function returns an mysqli Object
 
 //to see how the object is returned debug this 
 /* echo "<pre>";
@@ -14,3 +14,8 @@ exit; */
 } else {
     echo mysqli_connect_error($conn); //this function prints db errors
 } */
+
+// Close the database connection securely
+/* mysqli_close($conn);
+
+echo "Connection closed."; */

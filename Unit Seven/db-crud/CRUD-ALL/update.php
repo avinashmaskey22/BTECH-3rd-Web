@@ -6,9 +6,9 @@ $sql = "UPDATE students
         full_name = '" . $_POST['uname'] . "', 
         email = '" . $_POST['uemail'] . "', 
         address = '" . $_POST['uaddress'] . "', 
-        contact_number = '" . $_POST['unum'] . "'
+        contact_number = " . $_POST['unum'] . "
         
-        WHERE id = " . $_GET['id'];
+        WHERE s_id = " . $_GET['id'];
 
 //executing a query in database
 $query = mysqli_query($conn, $sql);

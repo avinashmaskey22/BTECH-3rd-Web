@@ -9,15 +9,12 @@
 //databse connection
 require_once 'connect.php';
 
-// $conn = mysqli_connect("localhost", "root", "", "demo", 3306);
-
 $sql = "INSERT INTO students
         SET
         full_name = '" . $_POST['uname'] . "', 
         email = '" . $_POST['uemail'] . "', 
         address = '" . $_POST['uaddress'] . "', 
-        contact_number = '" . $_POST['unum'] . "' 
-";
+        contact_number = " . $_POST['unum'];
 
 //executing a query in database
 $query = mysqli_query($conn, $sql);

@@ -37,8 +37,8 @@
                     <td><?php echo $row['address']; ?></td>
                     <td><?php echo $row['contact_number']; ?></td>
                     <td>
-                        <a href="edit.php?id=<?php echo $row['id']; ?>">Edit</a>
-                        <a href="delete.php?id=<?php echo $row['id']; ?>" onclick="return confirm('Are you sure you want to delete your data?')">Delete</a>
+                        <a href="edit.php?id=<?php echo $row['s_id']; ?>">Edit</a>
+                        <a href="delete.php?id=<?php echo $row['s_id']; ?>" onclick="return confirm('Are you sure you want to delete your data?')">Delete</a>
                     </td>
                 </tr>
         <?php
