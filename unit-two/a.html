@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        fieldset {
+            width: 400px;
+            margin: 20px auto;
+            padding: 15px;
+        }
+        legend {
+            font-weight: bold;
+        }
+        label {
+            display: inline-block;
+            width: 120px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<form>
+    <fieldset>
+        <legend><i>Personal Information</i></legend>
+
+        <label>Full Name:</label>
+        <input type="text" name="name"><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"><br>
+
+        <label>Password:</label>
+        <input type="password" name="password"><br>
+
+        <label>Gender:</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <input type="radio" name="gender"> Others<br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><i>Additional Details</i></legend>
+
+        <label>Hobbies:</label>
+        <input type="checkbox"> Reading
+        <input type="checkbox"> Singing
+        <input type="checkbox"> Sports<br>
+
+        <label>Country:</label>
+        <select>
+            <option selected disabled>Please Select Your Country</option>
+            <option>Nepal</option>
+            <option>India</option>
+            <option>Other</option>
+        </select><br>
+
+        <label>Address:</label>
+        <textarea rows="3" cols="25"></textarea><br>
+
+        <label>Upload Photo:</label>
+        <input type="file" name="photo"><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend><i>Submit</i></legend>
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear">
+    </fieldset>
+</form>
+
+</body>
+</html>

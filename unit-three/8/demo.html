@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Content-box vs Border-box</title>
+  <style>
+    .content-box-example {
+      box-sizing: content-box;
+      width: 100%;
+      padding: 20px;
+      border: 5px solid red;
+      background-color: lightblue;
+    }
+
+    .border-box-example {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+      border: 5px solid green;
+      background-color: lightyellow;
+    }
+
+    .container {
+      width: 300px;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h3>Content-Box Example</h3>
+    <div class="content-box-example">
+      This box may overflow the container.
+    </div>
+  </div>
+
+  <div class="container">
+    <h3>Border-Box Example</h3>
+    <div class="border-box-example">
+      This box fits perfectly within the container.
+    </div>
+  </div>
+</body>
+
+</html>

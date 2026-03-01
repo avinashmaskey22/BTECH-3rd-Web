@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Application Form</title>
+</head>
+<body>
+
+<h2 style="text-align:center;">APPLICATION FORM</h2>
+
+<form action="#" method="post">
+
+    <!-- Personal Details -->
+    <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+            <tr>
+                <td>Applicant's full name</td>
+                <td>
+                    <select name="title">
+                        <option>--Select--</option>
+                        <option>Mr.</option>
+                        <option>Ms.</option>
+                        <option>Mrs.</option>
+                    </select>
+                </td>
+                <td><input type="text" name="applicant_name"></td>
+
+                <td>Care Of</td>
+                <td>
+                    <label><input type="radio" name="care_of" value="parents" checked> Parents</label>
+                    <label><input type="radio" name="care_of" value="guardian"> Guardian</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Father's Name</td>
+                <td>
+                    <select name="father_title">
+                        <option>Mr.</option>
+                        <option>Late</option>
+                    </select>
+                </td>
+                <td><input type="text" name="father_name"></td>
+
+                <td>Mother's Name</td>
+                <td>
+                    <select name="mother_title">
+                        <option>Mrs.</option>
+                        <option>Ms.</option>
+                        <option>Late</option>
+                    </select>
+                    <input type="text" name="mother_name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender</td>
+                <td colspan="2">
+                    <label><input type="radio" name="gender" value="male"> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="others"> Others</label>
+                </td>
+
+                <td>Date of Birth</td>
+                <td><input type="date" name="dob"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- Contact Details -->
+    <fieldset>
+        <legend>Contact Details</legend>
+        <table>
+            <tr>
+                <td>Mobile Number</td>
+                <td><input type="text" name="mobile"></td>
+
+                <td>Email ID</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td>Permanent Address</td>
+                <td colspan="3"><input type="text" name="address1" size="60"></td>
+            </tr>
+
+            <tr>
+                <td>Temporary Address</td>
+                <td colspan="3"><input type="text" name="address2" size="60"></td>
+            </tr>
+
+            <tr>
+                <td>City</td>
+                <td><input type="text" name="city"></td>
+
+                <td>Province</td>
+                <td>
+                    <select name="Province">
+                        <option selected disabled="">--Select--</option>
+                        <option>Province 1</option>
+                        <option>Province 2</option>
+                        <option>Province 3</option>
+                        <option>Province 4</option>
+                        <option>Province 5</option>
+                        <option>Province 6</option>
+                        <option>Province 7</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Pin Code</td>
+                <td><input type="text" name="pincode"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- Qualification Details -->
+    <fieldset>
+        <legend>Qualification Details</legend>
+        <table border="1" cellpadding="3" cellspacing="0">
+            <tr>
+                <th>Sr No.</th>
+                <th>Qualification</th>
+                <th>Board/University</th>
+                <th>Passing Year</th>
+                <th>Percentage</th>
+            </tr>
+
+            <!-- Row 1 -->
+            <tr>
+                <td>1</td>
+                <td>
+                    <select name="qual1">
+                        <option>--Select--</option>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Diploma</option>
+                        <option>Graduate</option>
+                    </select>
+                </td>
+                <td><input type="text" name="board1"></td>
+                <td><input type="text" name="year1"></td>
+                <td><input type="text" name="percent1"></td>
+            </tr>
+
+            <!-- Row 2 -->
+            <tr>
+                <td>2</td>
+                <td>
+                    <select name="qual2">
+                        <option>--Select--</option>
+                        <option>10th</option>
+                        <option>12th</option>
+                        <option>Diploma</option>
+                        <option>Graduate</option>
+                    </select>
+                </td>
+                <td><input type="text" name="board2"></td>
+                <td><input type="text" name="year2"></td>
+                <td><input type="text" name="percent2"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- Language Knowledge -->
+    <fieldset>
+        <legend>Language Knowledge</legend>
+        <table border="1" cellpadding="3" cellspacing="0">
+            <tr>
+                <th>Language</th>
+                <th>Reading</th>
+                <th>Writing</th>
+                <th>Spoken</th>
+            </tr>
+            <tr>
+                <td>Nepali</td>
+                <td><input type="checkbox" name="nep_read"></td>
+                <td><input type="checkbox" name="nep_write"></td>
+                <td><input type="checkbox" name="nep_speak"></td>
+            </tr>
+            <tr>
+                <td>Hindi</td>
+                <td><input type="checkbox" name="hindi_read"></td>
+                <td><input type="checkbox" name="hindi_write"></td>
+                <td><input type="checkbox" name="hindi_speak"></td>
+            </tr>
+            <tr>
+                <td>English</td>
+                <td><input type="checkbox" name="english_read"></td>
+                <td><input type="checkbox" name="english_write"></td>
+                <td><input type="checkbox" name="english_speak"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <!-- Identification Details -->
+    <fieldset>
+        <legend>Identification Details</legend>
+        <table>
+            <tr>
+                <td>Citizen Ship No.</td>
+                <td><input type="text" name="citizen"></td>
+
+                <td>PAN Card Number</td>
+                <td><input type="text" name="pan"></td>
+            </tr>
+
+            <tr>
+                <td>Upload Photo</td>
+                <td><input type="file" name="photo"></td>
+
+                <td>Upload Signature</td>
+                <td><input type="file" name="signature"></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <p style="text-align:center;">
+        <input type="submit" value="Submit">
+        <input type="reset" value="reset">
+    </p>
+
+</form>
+
+</body>
+</html>

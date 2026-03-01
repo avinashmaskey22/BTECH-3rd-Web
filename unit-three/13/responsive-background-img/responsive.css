@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('band-member.png');
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* 
+Note: 
+For background-size we have following values:
+ - auto: The background image retains its original size without scaling.
+ - contain: The image scales to fit entirely within the container without cropping, leaving empty space if aspect ratios differ.
+ - cover: The image scales to completely cover the container, cropping parts if aspect ratios differ. 
+
+*/
