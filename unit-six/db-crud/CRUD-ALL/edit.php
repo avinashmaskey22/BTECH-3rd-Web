@@ -11,7 +11,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     }
 
     //records from database tables are retrieved in order to display in the form
-    $sql_1 = "SELECT * FROM students WHERE s_id = " . $id;
+    $sql_1 = "SELECT * FROM students WHERE sid = " . $id;
     $query_1 = mysqli_query($conn, $sql_1);
 
     if (mysqli_num_rows($query_1) <= 0) {
@@ -36,7 +36,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 </head>
 
 <body>
-    <form action="update.php?id=<?php echo $old_data['s_id']; ?>" method="POST" enctype="" name="form">
+    <form action="update.php?id=<?php echo $old_data['sid']; ?>" method="POST" enctype="" name="form">
 
         Name: <input type="text" name="uname" value="<?php echo $old_data['full_name']; ?>"> <br><br>
 

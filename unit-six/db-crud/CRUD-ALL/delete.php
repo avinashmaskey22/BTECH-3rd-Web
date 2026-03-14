@@ -12,7 +12,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
     }
 
     //To check whether the student exists in the database before attempting deletion.
-    $sql_1 = "SELECT * FROM students WHERE s_id = " . $id;
+    $sql_1 = "SELECT * FROM students WHERE sid = " . $id;
     $query_1 = mysqli_query($conn, $sql_1);
 
     //validates if there is data in a table or not.
@@ -21,7 +21,7 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
         exit;
     }
 
-    $sql = "DELETE FROM students WHERE s_id = " . $id;
+    $sql = "DELETE FROM students WHERE sid = " . $id;
     $query = mysqli_query($conn, $sql);
 
     if ($query) {
