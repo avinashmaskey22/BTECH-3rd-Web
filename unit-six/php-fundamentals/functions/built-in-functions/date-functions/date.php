@@ -39,11 +39,11 @@
 */
 
 $date = date('Y-m-d h:i:s A');
-echo $date;
+// echo $date;
 echo "<br>";
 
 $timezone = date_default_timezone_get();
-echo $timezone;
+// echo $timezone;
 echo "<br>";
 
 $timezone = date_default_timezone_set('Asia/Kathmandu');
@@ -56,6 +56,6 @@ $date = date('Y-m-d h:i:s A');
 
 echo "<br>";
 
-/* 7th of March, 2025 */
+/* 1st of March, 2026 */
 $date = date('jS \of F, Y');
 // echo $date;

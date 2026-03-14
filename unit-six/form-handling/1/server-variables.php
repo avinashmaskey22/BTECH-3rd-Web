@@ -37,9 +37,9 @@ the contents of $_GET and $_POST.
 
 */
 
-echo "<pre>";
+/* echo "<pre>";
 print_r($_SERVER);
-echo "</pre>";
+echo "</pre>"; */
 
 
 /* echo "<pre>";

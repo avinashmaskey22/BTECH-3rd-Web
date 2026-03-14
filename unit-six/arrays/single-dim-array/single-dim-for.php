@@ -32,9 +32,7 @@ $i = 0;
             for ($i = 0; $i < count($person); $i++) {
             ?>
                 <td><?php echo $person[$i]; ?></td>
-
             <?php } ?>
-
         </tr>
     </table>
 </body>

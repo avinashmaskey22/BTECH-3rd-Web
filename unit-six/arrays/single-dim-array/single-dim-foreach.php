@@ -7,6 +7,7 @@ $person = array(
 );
 $i = 1;
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 

@@ -26,9 +26,9 @@ var_dump($info);
 echo "</pre>"; */
 
 /* $infos = array(
-    "Shanker Dev Campus",
-    "sdc@thames.edu.np",
-    "Putalisadak",
+    "KUSOED",
+    "kusoed@ku.edu.np",
+    "Hattiban",
     11111111
 );
 
